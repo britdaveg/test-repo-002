@@ -28,7 +28,7 @@
       <div class="page-header">
 
   <div align="center" id="headerimg">
-    <a href="/index.html"><img alt="Melville Electronic Library - a critical archive" border="0" height="96" src="../images//header_top.jpg" width="1024"/></a>
+    <a href="/index.html"><img alt="Melville Electronic Library - a critical archive" border="0" height="96" src="../images/header_top.jpg" width="1024"/></a>
   </div>
 
   <div align="center" id="headernav">
@@ -155,13 +155,15 @@
 
 
         // convert to real JSON
-        var divs = JSON.parse( '{&quot;1&quot;:[]}'.replace( /&quot;/g, "\"" ) );
+        var page_divs = JSON.parse( '{&quot;1&quot;:[]}'.replace( /&quot;/g, "\"" ) );
 
         // manually add the divs to the page once it is loaded
-        $.each( divs, function( page, div ) {
-            if( div.length != 0 && div[0]['heading'] ) {
-                $('<h3>' + div[0]['heading'] + '</h3>').insertBefore($(".reading-div span[data-annotation-id~='" + div[0]['id'] + "']").filter(":first"));
-            }
+        $.each( page_divs, function( i, divs ) {
+            $.each( divs, function( j, div ) {
+                if( div['id'] && div['heading'] ) {
+                    $('<h3>' + div['heading'] + '</h3>').insertBefore($(".reading-div span[data-annotation-id~='" + div['id'] + "']").filter(":first"));
+                }
+            });
         });
 
         // convert to real JSON
@@ -199,7 +201,7 @@
         // set the minimum page height in case we have moved stuff around...
         // do each page seperatly...
            var last_thumbnail = $( "#page-4200 .thumb-image" ).filter( ":last" );
-           if( last_thumbnail ) {
+           if( last_thumbnail && last_thumbnail.offset( ) ) {
                $( "#page-4200" ).css( "min-height", last_thumbnail.offset( ).top );
            }
 
