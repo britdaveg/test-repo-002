@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>new-doc-3</title>
+      <title>doc2</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width">
@@ -50,7 +50,7 @@
 </div>		 
 
 
-      <h1 class="doc-title">new-doc-3</h1>
+      <h1 class="doc-title">doc2</h1>
       	  <style type="text/css">
 			.humedit-hi_bold { font-weight:bold; }
 			.humedit-hi_italic { font-style: italic; }
@@ -79,8 +79,6 @@
               <label class="compare-label">Compare with</label>
               <select id="comparands" onchange="location = this.options[this.selectedIndex].value;">
                  <option value="" disabled selected>Select document</option>
-                  <option value='/c/comparisons/17.html'>new-doc-1</option>
-                  <option value='/c/comparisons/19.html'>new-doc-2</option>
               </select>
            </div>
       </div>
@@ -109,7 +107,7 @@
    <table class="header block">
          <tr>
             <td class = "header name">Title:</td>
-            <td>new-doc-3</td>
+            <td>doc2</td>
          </tr>
    
       <tr class="sep"><td colspan="2"/></tr>
@@ -135,100 +133,39 @@
    </div>
 </div>
 
-            
-            <div id="reading-text" class="reading-text">
-      <div id="page-4209" class="reading-page">
-
-
-        <div class="thumb-image-div col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-        <div class="reading-div col-xs-8 col-sm-8 col-md-8 col-lg-8" id="div-1"><span data-annotation-id='4212' class='annotation humedit-pb'>new-doc-3<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span><span data-annotation-id='4214' class='annotation humedit-pb'>new-doc-3<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<span data-annotation-id='4215' class='annotation humedit-pb'></span>new-doc-3<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span></div>
-        <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
-
+                 <div id="page-4253" class="sbs-page">
+      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="dragon" id="page-image-2916c8a6-ab1b-4cd0-88eb-2734e3f83df3"
+                 data-tile-source-url="/ww/openseadragon/2916c8a6-ab1b-4cd0-88eb-2734e3f83df3.json"></div>
       </div>
+      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="1">
+        <div class="diplomatic"><div class='line'>Lorem </div>
 </div>
-
-<script type="text/javascript">
-
-    $(document).ready( function( ) {
-
-        // get the information for all our divs and images...
-
-
-        // convert to real JSON
-        var page_divs = JSON.parse( '{&quot;1&quot;:[]}'.replace( /&quot;/g, "\"" ) );
-
-        // manually add the divs to the page once it is loaded
-        $.each( page_divs, function( i, divs ) {
-            $.each( divs, function( j, div ) {
-                if( div['id'] && div['heading'] ) {
-                    $('<h3>' + div['heading'] + '</h3>').insertBefore($(".reading-div span[data-annotation-id~='" + div['id'] + "']").filter(":first"));
-                }
-            });
-        });
-
-        // convert to real JSON
-        var images = JSON.parse( '{&quot;1&quot;:[{&quot;aid&quot;:4215,&quot;guid&quot;:&quot;7d5188c2-325c-4c62-be6e-82a209cd95a3&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data7d5188c2-325c-4c62-be6e-82a209cd95a343_AYCBAIG_10313605107-2.jpg&quot;},{&quot;aid&quot;:4214,&quot;guid&quot;:&quot;59f883f8-d767-40b7-a48b-4e756270a92c&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data59f883f8-d767-40b7-a48b-4e756270a92c30_ARTSTOR_103_41822000731321-1.jpg&quot;},{&quot;aid&quot;:4212,&quot;guid&quot;:&quot;11deb389-751a-4cc7-8df9-ac7a7ed52dae&quot;,&quot;thumbnail_url&quot;:&quot;https://dave-uploads-juxtaeditions.s3.amazonaws.com/zoom_data11deb389-751a-4cc7-8df9-ac7a7ed52dae12_AMICO_SAN_FRANCISCO_103856716-2.jpg&quot;}]}'.replace( /&quot;/g, "\"" ) );
-
-        // manually add the images to the page once it is loaded
-        $.each( images, function( page, images ) {
-           $.each( images, function( index, value ) {
-               $( thumb_html( value['aid'], value['guid'], value['thumbnail_url']) ).insertBefore( $( ".reading-div span[data-annotation-id~='" + value['aid'] + "']").filter( ":first" ) );
-            });
-        });
-
-        // ensure that the images don't overlap
-        var yoffset = 0;
-        var xoffset = 0;
-        var padding = 3;   // padding of 3px between images
-        var height = 115;  // estimate because the images are not yet displayed
-        $( ".thumb-image" ).each( function( index ) {
-            var offset = $(this).offset( );
-            if (index === 0) {
-                yoffset = offset.top + height + padding;
-                xoffset = offset.left;
-            } else {
-
-                if (offset.top < yoffset ) {
-                    offset.top = yoffset;
-                }
-                offset.left = xoffset;
-                $(this).offset(offset);
-
-                yoffset += ( height + padding );
-            }
-        });
-
-        // set the minimum page height in case we have moved stuff around...
-        // do each page seperatly...
-           var last_thumbnail = $( "#page-4209 .thumb-image" ).filter( ":last" );
-           if( last_thumbnail && last_thumbnail.offset( ) ) {
-               $( "#page-4209" ).css( "min-height", last_thumbnail.offset( ).top );
-           }
-
-        // hover over functionality...
-        $( ".thumb-image" ).hover(function( ) {
-            var aid = $( this).attr( "id").replace( "thumb-", "" );
-            $( ".reading-div span[data-annotation-id~='" + aid + "']" ).addClass( "reading-highlight");
-        }, function( ) {
-            var aid = $( this).attr( "id").replace( "thumb-", "" );
-            $( ".reading-div span[data-annotation-id~='" + aid + "']" ).removeClass( "reading-highlight");
-        });
-
-        // thumbnail click handler; call if the handler is defined, ignore otherwise.
-        $( ".thumb-image" ).click( function( ) {
-            if( typeof thumbnail_clicked === "function" ) {
-                var guid = $(this).attr("guid");
-                thumbnail_clicked(guid);
-            }
-        });
-
-    });
-
-    function thumb_html( id, guid, url ) {
-       return( "<img class='thumb-image' id='thumb-" + id + "' guid='" + guid + "' src='" + url + "'>" );
-    }
-
-</script>
+      </div>
+      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
+    </div>
+    <div id="page-4254" class="sbs-page">
+      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="dragon" id="page-image-5640360c-9f45-4a6e-b1a1-cf4a3f9dc1b8"
+                 data-tile-source-url="/ww/openseadragon/5640360c-9f45-4a6e-b1a1-cf4a3f9dc1b8.json"></div>
+      </div>
+      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="2">
+        <div class="diplomatic"><div class='line'>Lorem </div>
+</div>
+      </div>
+      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
+    </div>
+    <div id="page-4255" class="sbs-page">
+      <div class="page-image col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="dragon" id="page-image-a16f07ff-4ddc-474c-b759-0cdc61ed2e67"
+                 data-tile-source-url="/ww/openseadragon/a16f07ff-4ddc-474c-b759-0cdc61ed2e67.json"></div>
+      </div>
+      <div class="page col-xs-6 col-sm-6 col-md-6 col-lg-6" data-page-number="3">
+        <div class="diplomatic"><div class='line'>Lorem </div>
+</div>
+      </div>
+      <input id="annotationsJSON" name="annotationsJSON" type="hidden" value="[]" />
+    </div>
 
 
       </div>
@@ -240,7 +177,7 @@
 
    $(document).ready(function() {
       var seaDragonAssetsPath = "https://s3.amazonaws.com/assets-juxtaeditions/assets/"
-        var externalContentPath = "/c/catalog/"
+        var externalContentPath = "/ww/catalog/"
       var publishedView = new HumEditViewer.PublishedView({
             el: $("#hum-edit-published"),
             seaDragonAssetsPath: seaDragonAssetsPath,
