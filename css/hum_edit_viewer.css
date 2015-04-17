@@ -797,7 +797,7 @@ body {
   margin-left: 5px; }
 
 #hum-edit #editor-viewport .img-btns .ocr-btn {
-  background-image: url(/assets/ocr-spinner.gif);
+  background-image: url(/assets/ocr-spinner-b79aa53581de1d64d722695d73d03136.gif);
   background-repeat: no-repeat;
   background-color: #428bca;
   color: white;
@@ -958,19 +958,19 @@ body {
   padding: 0px; }
 
 #xml-export-dialog .status-col .ok {
-  background-image: url(/assets/status.png);
+  background-image: url(/assets/status-c4ed49a0d70192f0082ce95294be73b2.png);
   background-position: 0 0; }
 
 #xml-export-dialog .status-col .error {
-  background-image: url(/assets/status.png);
+  background-image: url(/assets/status-c4ed49a0d70192f0082ce95294be73b2.png);
   background-position: 0 16px; }
 
 #xml-export-dialog .status-col .stale, #xml-export-dialog .status-col .new {
-  background-image: url(/assets/status.png);
+  background-image: url(/assets/status-c4ed49a0d70192f0082ce95294be73b2.png);
   background-position: 0 32px; }
 
 #xml-export-dialog .status-col .working {
-  background-image: url(/assets/collating.gif); }
+  background-image: url(/assets/collating-bf7aa023b8402d9e940f2d07ae03a78c.gif); }
 
 #xml-filter-dialog .include-tag-button {
   float: right; }
